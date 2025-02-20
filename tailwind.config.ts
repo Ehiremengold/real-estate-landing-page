@@ -8,9 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        lufga: ["var(--font-lufga)"],
+      },
+      screens: {
+        "max-md": { max: "767px" },
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#110229", // navy blue
+        secondary: "#1DAEFF", // light blue
+        tertiary: "#8F90A6", // grey
+        sky: "#ECF1F8",
       },
     },
   },
