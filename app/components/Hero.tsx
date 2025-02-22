@@ -66,11 +66,14 @@ const Hero = () => {
               <Image className="size-4" src={icons.search} alt="search-icon" />
             </div>
           </div>
-        </div>
-      </div>
-      <Image
-        src={images.hero}
-        alt="hero-image"
+        </motion.div>
+      </motion.div>
+
+
+      <motion.div
+        variants={imageVariants}
+        initial="hidden"
+        animate="visible"
         className="absolute right-0 bottom-0"
       />
     </section>
