@@ -13,8 +13,6 @@ This project is a sleek and responsive landing page designed for showcasing Real
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Running the Project](#running-the-project)
-- [Folder Structure](#folder-structure)
-- [License](#license)
 
 ---
 
