@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
 
             <hr />
-            <div className="bg-secondary grid place-content-center rounded-lg py-2 px-6">
+            <div className="hidden lg:block bg-secondary grid place-content-center rounded-lg py-2 px-6">
               <Image className="size-4" src={icons.search} alt="search-icon" />
             </div>
           </div>
