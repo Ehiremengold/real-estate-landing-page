@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { images } from "@/public/assets/export";
 import { motion, useAnimation } from "framer-motion";

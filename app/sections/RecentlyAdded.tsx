@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import houses from "../../public/assets/houses/export";
 import { motion, useAnimation } from "framer-motion";
