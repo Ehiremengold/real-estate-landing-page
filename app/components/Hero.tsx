@@ -74,6 +74,15 @@ const Hero = () => {
         variants={imageVariants}
         initial="hidden"
         animate="visible"
+            <div className="bg-secondary grid place-content-center rounded-lg py-2 px-6">
+              <Image className="size-4" src={icons.search} alt="search-icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <Image
+        src={images.hero}
+        alt="hero-image"
         className="absolute right-0 bottom-0"
       />
     </section>

@@ -62,9 +62,15 @@ const Footer = () => {
           <p className="mt-5 text-sm font-light text-slate-600">
             Subscribe to get latest property, blog news from us
           </p>
+<<<<<<< HEAD
           <div className="w-fit flex relative mt-5 ">
             <input className="font-light text-sm border px-2 py-2 rounded-xl outline-sky" placeholder="Email Address"></input>
             <div className="absolute flex rounded-full h-5 w-5 right-2.5 bottom-2.5 bg-secondary justify-center items-center">
+=======
+          <div className="flex relative mt-5">
+            <input className="font-light text-sm border px-2 py-2 rounded-xl outline-sky" placeholder="Email Address"></input>
+            <div className="absolute flex rounded-full h-5 w-5 right-0 bottom-2 bg-secondary justify-center items-center">
+>>>>>>> 20f5669 (complete)
               <Image src={icons.angle} alt="angle-icon" />
             </div>
           </div>
