@@ -12,9 +12,9 @@ const textVariants = {
     x: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const boxVariants = {
@@ -25,9 +25,9 @@ const boxVariants = {
     transition: {
       delay: 0.5,
       duration: 0.4,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const imageVariants = {
@@ -38,9 +38,9 @@ const imageVariants = {
     transition: {
       delay: 0.3,
       duration: 0.6,
-      ease: "easeOut"
-    }
-  }
+      ease: "easeOut",
+    },
+  },
 };
 
 const Hero = () => {
@@ -88,10 +88,10 @@ const Hero = () => {
             <div className="flex flex-col gap-2">
               <span className="text-sm font-medium">Property Type</span>
               <div className="flex justify-between items-center relative space-x-7">
-                <span className="text-xs text-gray-500 whitespace-nowrap">Choose Property Type</span>
-                <select
-                  className="absolute w-full -left-2 bg-transparent text-xs text-gray-500 font-light outline-none"
-                >
+                <span className="text-xs text-gray-500 whitespace-nowrap">
+                  Choose Property Type
+                </span>
+                <select className="absolute w-full -left-2 bg-transparent text-xs text-gray-500 font-light outline-none">
                   <option value=""></option>
                   <option value="semi-detached">Semi-Detached</option>
                   <option value="bungalow">Bungalow</option>
@@ -102,10 +102,22 @@ const Hero = () => {
             <hr className="bg-slate-400 h-12 w-[0.2] ml-5 mr-2" />
             <div className="flex flex-col gap-2">
               <span className="text-sm font-medium">Price Range</span>
-              <input
-                placeholder="Choose Price Range"
-                className="text-xs bg-transparent text-gray-500 outline-none"
-              />
+              <div className="flex justify-between items-center relative space-x-7">
+                <span className="text-xs text-gray-500 whitespace-nowrap">
+                  Choose price range
+                </span>
+                <select className="absolute w-full -left-2 bg-transparent text-xs text-gray-500 font-light outline-none">
+                  <option value=""></option>
+                  <option value="0 - $100,000">0 - $100,000</option>
+                  <option value="$100,000 - $250,000">
+                    $100,000 - $250,000
+                  </option>
+                  <option value="$250,000 - $500,000">
+                    $250,000 - $500,000
+                  </option>
+                  <option value="$500,000 and above">$500,000 and above</option>
+                </select>
+              </div>
             </div>
 
             <div className="hidden lg:block bg-secondary grid place-content-center rounded-lg py-2 px-6">
