@@ -47,7 +47,7 @@ const Header = () => {
         </button>
       </nav>
 
-      {/* <div
+      <div
         className={`md:hidden fixed bg-primary top-0 right-0 z-50 ${
           menuOpen ? " w-4/5 opacity-100" : "w-0 opacity-0"
         } h-screen duration-300 ease-in-out overflow-hidden`}
@@ -73,7 +73,7 @@ const Header = () => {
             LOG IN
           </button>
         </nav>
-      </div> */}
+      </div>
       <Hero />
     </header>
   );

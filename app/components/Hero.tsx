@@ -1,5 +1,6 @@
 import TabSwitcher from "./TabSwitcher";
 import { images } from "../../public/assets/export";
+import { icons } from "../../public/assets/icons/export";
 import Image from "next/image";
 
 const Hero = () => {
@@ -14,9 +15,57 @@ const Hero = () => {
           estate.
         </p>
 
-        <div className="flex flex-col mt-8 w-full md:w-3/4">
+        <div className="flex flex-col mt-8 w-full md:w-4/5">
           <TabSwitcher />
-          <div className="relative rounded-lg  bg-white bg-opacity-60 backdrop-blur-lg p-8"></div>
+          <div className="relative rounded-lg  bg-white bg-opacity-60 backdrop-blur-lg p-3 flex  justify-between gap-1">
+            <div className="flex flex-col gap-2">
+              <span className="text-sm font-medium">Location</span>
+              <div className="flex justify-between">
+                <input
+                  placeholder="Select your City"
+                  className="text-xs bg-transparent text-gray-500 outline-none"
+                />
+                <button>
+                  <Image
+                    alt="search-icon"
+                    className="cursor-pointer"
+                    src={icons.location}
+                  />
+                </button>
+              </div>
+            </div>
+            <hr className="bg-slate-300 h-12 w-[0.2] ml-2 mr-2" />
+            <div className="flex flex-col gap-2">
+              <span className="text-sm font-medium">Property Type</span>
+              <div className="flex justify-between items-center relative space-x-7">
+                <span className="text-xs text-gray-500 whitespace-nowrap">Choose Property Type</span>
+                <select
+                  name=""
+                  className="absolute w-full -left-2 bg-transparent text-xs text-gray-500 font-light outline-none"
+                  id=""
+                >
+                  <option value=""></option>
+                  <option value="">Semi-Detached</option>
+                  <option value="">Bungalow</option>
+                  <option value="">Detached</option>
+                </select>
+              </div>
+            </div>
+            <hr className="bg-slate-400 h-12 w-[0.2] ml-5 mr-2" />
+            <div className="flex flex-col gap-2">
+              <span className="text-sm font-medium">Price Range</span>
+              <input
+                  placeholder="Choose Price Range"
+                  className="text-xs bg-transparent text-gray-500 outline-none"
+                />
+              <p className="text-xs text-gray-500"></p>
+            </div>
+
+            <hr />
+            <div className="bg-secondary grid place-content-center rounded-lg py-2 px-6">
+              <Image className="size-4" src={icons.search} alt="search-icon" />
+            </div>
+          </div>
         </div>
       </div>
       <Image
